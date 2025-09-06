@@ -53,7 +53,7 @@ const DashboardBase: React.FC = () => {
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Restaurant Dashboard</h1>
-            <p className="text-gray-600">Monitor your restaurant's performance and make data-driven decisions</p>
+            <p className="text-gray-600">Monitor your restaurant&apos;s performance and make data-driven decisions</p>
           </div>
 
           {/* Time Filter */}
