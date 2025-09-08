@@ -17,6 +17,7 @@ export interface Order {
   Order_Status: 'Delivered' | 'In Transit' | 'Pending';
   Delivery_Person: string;
   Delivery_Status: string;
+  Order_Date?: string; // ISO date string
 }
 
 export interface ProcessedData {

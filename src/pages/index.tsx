@@ -1,4 +1,4 @@
-import DashboardBase from "./DasboardBase";
+import DashboardBase from "@/module/DashboardBase";
 
 
 export default function Home() {
