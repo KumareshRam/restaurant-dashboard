@@ -232,16 +232,11 @@ export const calculatePercentageChange = (current: number, previous: number): { 
 };
 
 // Process data with comparison to previous period
-export interface ProcessedDataWithComparison extends ProcessedData {
-  revenueChange: { value: string; trend: 'up' | 'down' | undefined };
-  ordersChange: { value: string; trend: 'up' | 'down' | undefined };
-  avgOrderValueChange: { value: string; trend: 'up' | 'down' | undefined };
-}
 
 export const processOrderDataWithComparison = (
   orders: Order[], 
   timeframe: TimeFrame
-): ProcessedDataWithComparison => {
+): ProcessedData => {
   const ordersWithDates = addDemoOrderDates(orders);
   
   // Get current period data

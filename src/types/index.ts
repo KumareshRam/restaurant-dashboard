@@ -32,4 +32,7 @@ export interface ProcessedData {
   deliveryPerformance: { name: string; deliveries: number }[];
   statusData: { name: string; value: number; color: string }[];
   revenueTrend: { day: string; revenue: number }[];
+  revenueChange?: { value: string; trend: 'up' | 'down' | undefined };
+  ordersChange?: { value: string; trend: 'up' | 'down' | undefined };
+  avgOrderValueChange?: { value: string; trend: 'up' | 'down' | undefined };
 }

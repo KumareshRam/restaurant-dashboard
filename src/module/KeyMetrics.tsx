@@ -11,8 +11,8 @@ const KeyMetrics: React.FC<{ processedData: ProcessedData }> = (props) => {
         title="Total Revenue"
         value={`$${processedData.totalRevenue.toFixed(2)}`}
         icon={DollarSign}
-        trend={processedData?.totalRevenueChange?.trend ?? processedData.revenueChange?.trend}
-        trendValue={processedData?.totalRevenueChange?.value ?? processedData.revenueChange?.value}
+        trend={processedData.revenueChange?.trend}
+        trendValue={processedData.revenueChange?.value}
         color="green"
       />
       <StatCard
@@ -27,8 +27,8 @@ const KeyMetrics: React.FC<{ processedData: ProcessedData }> = (props) => {
         title="Avg Order Value"
         value={`$${processedData.avgOrderValue.toFixed(2)}`}
         icon={TrendingUp}
-        trend={processedData.avgOrderValueChange.trend}
-        trendValue={processedData.avgOrderValueChange.value}
+        trend={processedData.avgOrderValueChange?.trend}
+        trendValue={processedData.avgOrderValueChange?.value}
         color="purple"
       />
       <StatCard
